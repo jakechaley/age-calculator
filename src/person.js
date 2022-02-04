@@ -25,6 +25,7 @@ jupiterAge() {
   return jupiterAge;
 }
 averageLifeExpectancy() {
-  
+  const averageLifeExpectancy = 73; //average life expectancy for humans rounded to a fixed point.
+  return averageLifeExpectancy;
 }
 }
