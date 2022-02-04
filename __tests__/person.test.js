@@ -34,5 +34,8 @@ describe('Person', () => {
   test('should return how many years user has left to live on mercury', () => {
     const person2 = new Person(2)
     expect(person2.yearsLeftOnMercury()).toEqual(65);
-  })
+  });
+  test('should return how many years user has left to live on venus', () => {
+    expect(person1.yearsLeftOnVenus()).toEqual(31)
+  });
 });
