@@ -21,6 +21,7 @@ marsAge() {
   return marsAge;
 }
 jupiterAge() {
-  
+  const jupiterAge = parseFloat((this.age / 11.86).toFixed());
+  return jupiterAge;
 }
 }
