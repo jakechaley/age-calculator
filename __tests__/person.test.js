@@ -23,8 +23,11 @@ describe('Person', () => {
   });
   test('should return persons age on jupiter', () => {
     expect(person1.jupiterAge()).toEqual(2);
-  })
+  });
   test('should return life expectancy on earth', () => {
     expect(person1.averageLifeExpectancy()).toEqual(73);
-  })
+  });
+  test('should return how many years user has (left to live on earth', () => {
+    expect (person1.yearsLeftOnEarth()).toEqual(47);
+  });
 });
