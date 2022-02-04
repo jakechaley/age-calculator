@@ -10,6 +10,7 @@ earthAge() {
 }
 
 mercuryAge() {
-  
+  const mercuryAge = parseFloat((this.age / .24).toFixed());
+  return mercuryAge;
 }
 }
