@@ -17,6 +17,10 @@ venusAge() {
   return venusAge;
 }
 marsAge() {
+  const marsAge = parseFloat((this.age / 1.88).toFixed());
+  return marsAge;
+}
+jupiterAge() {
   
 }
 }
