@@ -36,7 +36,8 @@ export default class Person {
     return yearsLeftOnMercury;
   }
   yearsLeftOnVenus() {
-    
+    const yearsLeftOnVenus = parseFloat((this.lifeExpectancy - this.venusAge()).toFixed());
+    return yearsLeftOnVenus;
   }
 
 
