@@ -5,6 +5,11 @@ export default class Person {
 }
 
 earthAge() {
+  return this.age;
 
+}
+
+mercuryAge() {
+  
 }
 }
