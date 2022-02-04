@@ -16,4 +16,7 @@ venusAge() {
   const venusAge = parseFloat((this.age / .62).toFixed());
   return venusAge;
 }
+marsAge() {
+  
+}
 }

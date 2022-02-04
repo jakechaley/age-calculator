@@ -17,5 +17,8 @@ describe('Person', () => {
   });
   test('should return persons age on venus', () => {
     expect(person1.venusAge()).toEqual(42);
-  })
+  });
+  test('should return persons age on mars', () => {
+    expect(person1.marsAge()).toEqual(14);
+  });
 });
