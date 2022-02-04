@@ -1,7 +1,7 @@
 export default class Person {
   constructor(age) {
     this.age = age;
-    
+    this.lifeExpectancy = 73;
 }
 
 earthAge() {
@@ -29,6 +29,7 @@ averageLifeExpectancy() {
   return averageLifeExpectancy;
 }
 yearsLeftOnEarth() {
-  
+  const yearsLeftOnEarth = parseFloat((this.lifeExpectancy - this.age).toFixed());
+  return yearsLeftOnEarth;
 }
 }

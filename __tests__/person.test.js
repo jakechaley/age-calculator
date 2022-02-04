@@ -5,6 +5,7 @@ describe('Person', () => {
 
   beforeEach(() => {
     person1 = new Person(26);
+    
   });
   test('should create a person object with age constructor', () => {
     expect(person1.age).toEqual(26);
