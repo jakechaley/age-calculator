@@ -28,7 +28,11 @@ describe('Person', () => {
   test('should return life expectancy on earth', () => {
     expect(person1.averageLifeExpectancy()).toEqual(73);
   });
-  test('should return how many years user has (left to live on earth', () => {
-    expect (person1.yearsLeftOnEarth()).toEqual(47);
+  test('should return how many years user has left to live on earth', () => {
+    expect(person1.yearsLeftOnEarth()).toEqual(47);
   });
+  test('should return how many years user has left to live on mercury', () => {
+    const person2 = new Person(2)
+    expect(person2.yearsLeftOnMercury()).toEqual(65);
+  })
 });
