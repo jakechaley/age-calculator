@@ -32,7 +32,8 @@ export default class Person {
   return yearsLeftOnEarth;
   }
   yearsLeftOnMercury() {
-    
+    const yearsLeftOnMercury = parseFloat((this.lifeExpectancy - this.mercuryAge()).toFixed());
+    return yearsLeftOnMercury;
   }
 
 
