@@ -83,28 +83,33 @@ describe('Person', () => {
 
   test('should return years lived past life expectancy on mars', () => {
     const person6 = new Person(146, 73);
-    expect(person6.yearsPastLifeExpectancyOnMars()).toEqual(5) 
+    expect(person6.yearsPastLifeExpectancyOnMars()).toEqual(5);
   });
 
   test('should return 0 if user has not lived past life expectancy on mars', () => {
-    expect(person1.yearsPastLifeExpectancyOnMars()).toEqual(0)
+    expect(person1.yearsPastLifeExpectancyOnMars()).toEqual(0);
   });
 
   test('should return years lived past life expectancy on jupiter', () => {
     const person7 = new Person(1000, 73);
-    expect(person7.yearsPastLifeExpectancyOnJupiter()).toEqual(11) 
+    expect(person7.yearsPastLifeExpectancyOnJupiter()).toEqual(11); 
   });
 
   test('should return 0 if user has not lived past life expectancy on jupiter', () => {
-    expect(person1.yearsPastLifeExpectancyOnJupiter()).toEqual(0)
+    expect(person1.yearsPastLifeExpectancyOnJupiter()).toEqual(0);
   });
   
   test('should return 0 if user has lived past life expectancy on earth', () => {
     const person8 = new Person(100, 73)
-    expect(person8.yearsLeftOnEarth()).toEqual(0)
+    expect(person8.yearsLeftOnEarth()).toEqual(0);
   });
 
   test('should return 0 if user has lived past life expectancy on mercury', () => {
-    expect(person1.yearsLeftOnMercury()).toEqual(0)
+    expect(person1.yearsLeftOnMercury()).toEqual(0);
+  });
+
+  test('should return 0 if user has lived past life expectancy on venus', () => {
+    const person9 = new Person(50, 73);
+    expect(person9.yearsLeftOnVenus()).toEqual(0);
   });
 });
