@@ -87,4 +87,10 @@ export default class Person {
       return yearsPastLifeExpectancyOnMars;
     }
   }
+  
+  yearsPastLifeExpectancyOnJupiter() {
+    
+  }
+
+
 }
