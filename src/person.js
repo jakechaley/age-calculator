@@ -89,6 +89,8 @@ export default class Person {
   }
   
   yearsPastLifeExpectancyOnJupiter() {
+    const yearsPastLifeExpectancyOnJupiter = parseFloat((this.jupiterAge() - this.lifeExpectancy).toFixed());
+    return yearsPastLifeExpectancyOnJupiter;
     
   }
 
