@@ -56,7 +56,11 @@ export default class Person {
 
   yearsLeftOnMars() {
     const yearsLeftOnMars = parseFloat((this.lifeExpectancy - this.marsAge()).toFixed());
-    return yearsLeftOnMars;
+    if (yearsLeftOnMars < 0) {
+      return 0;
+    } else {
+      return yearsLeftOnMars;
+    }
   }
 
   yearsLeftOnJupiter() {
