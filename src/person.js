@@ -29,7 +29,11 @@ export default class Person {
 
   yearsLeftOnEarth() {
     const yearsLeftOnEarth = parseFloat((this.lifeExpectancy - this.age).toFixed());
-    return yearsLeftOnEarth;
+    if (yearsLeftOnEarth < 0) {
+      return 0;
+    } else {
+      return yearsLeftOnEarth;
+    }
   }
 
   yearsLeftOnMercury() {
@@ -96,6 +100,4 @@ export default class Person {
       return yearsPastLifeExpectancyOnJupiter;
     }
   }
-
-
 }
