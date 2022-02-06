@@ -71,6 +71,7 @@ export default class Person {
   }
 
   yearsPastLifeExpectancyOnVenus() {
-    
+    const yearsPastLifeExpectancyOnVenus = parseFloat((this.venusAge() - this.lifeExpectancy).toFixed());
+    return yearsPastLifeExpectancyOnVenus;
   }
 }
