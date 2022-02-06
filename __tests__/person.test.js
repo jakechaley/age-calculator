@@ -72,5 +72,8 @@ describe('Person', () => {
     expect(person4.yearsPastLifeExpectancyOnMercury()).toEqual(0)
   });
 
-
+  test('should return years lived past life expectancy on venus', () => {
+    const person5 = new Person(50, 73);
+    expect(person5.yearsPastLifeExpectancyOnVenus()).toEqual(8) 
+  });
 });
