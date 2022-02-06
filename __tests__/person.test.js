@@ -67,5 +67,10 @@ describe('Person', () => {
     expect(person1.yearsPastLifeExpectancyOnMercury()).toEqual(35)
   });
 
+  test('should return 0 if user has not lived past life expectancy on mercury', () => {
+    const person4 = new Person(4, 73);
+    expect(person4.yearsPastLifeExpectancyOnMercury()).toEqual(0)
+  });
+
 
 });
