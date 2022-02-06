@@ -54,6 +54,15 @@ export default class Person {
 
   yearsPastLifeExpectancyOnEarth() {
     const yearsPastLifeExpectancyOnEarth = parseFloat((this.earthAge() - this.lifeExpectancy).toFixed());
-    return yearsPastLifeExpectancyOnEarth;
+    if(yearsPastLifeExpectancyOnEarth < 0) {
+      return 0;
+    } else {
+      return yearsPastLifeExpectancyOnEarth;
+    }
+  }
+
+  yearsPastLifeExpectancyOnMercury() {
+    const yearsPastLifeExpectancyOnMercury = parseFloat((this.mercuryAge() - this.lifeExpectancy).toFixed());
+    return yearsPastLifeExpectancyOnMercury;
   }
 }
