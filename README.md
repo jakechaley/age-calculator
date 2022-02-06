@@ -1,4 +1,4 @@
-# _Cosmis Age Calculator_
+# _Cosmic Age Calculator_
 
 #### By _**Jake C. Haley**_
 
@@ -20,9 +20,10 @@ _Enter your age. Get back your age on Mercury, Mars, Venus, Jupiter, and Earth._
 
 ## Setup/Installation Requirements
 
-* _Clone the Repository_
-* _Open index.html in browser_
-* _See the live site [here!]()_
+* Clone the Repository
+* Run `$ npm install` in root directory
+* Run `$ npm run start` to create live server (UI currently not function as per project requirements)
+* Run `$ npm run test` to run tests
 
 
 ## Known Bugs
