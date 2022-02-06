@@ -53,6 +53,7 @@ export default class Person {
   }
 
   yearsPastLifeExpectancyOnEarth() {
-    
+    const yearsPastLifeExpectancyOnEarth = parseFloat((this.earthAge() - this.lifeExpectancy).toFixed());
+    return yearsPastLifeExpectancyOnEarth;
   }
 }
